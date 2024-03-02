@@ -1,0 +1,312 @@
+[
+      {
+      "name": "Ibuprofen",
+      "shops":[
+        {"_id": "65e2ed05c1320687f91e00a2",
+        "price": 445
+        },
+        {"_id": "65e2ed05c1320687f91e00a3",
+        "price": 450
+        },
+        {"_id": "65e2ed05c1320687f91e00a4",
+        "price": 345
+        }
+      ]
+    },
+    {
+      "name": "Oxygen",
+       "shops":[
+        {"_id": "65e2ed05c1320687f91e00a2",
+        "price": 393
+        },
+        {"_id": "65e2ed05c1320687f91e00a3",
+        "price": 400
+        },
+        {"_id": "65e2ed05c1320687f91e00a4",
+        "price": 345
+        }
+      ]
+    },
+    {
+      "name": "Hand Sanitizer",
+       "shops":[
+        {"_id": "65e2ed05c1320687f91e00a2",
+        "price": 590
+        },
+        {"_id": "65e2ed05c1320687f91e00a3",
+        "price": 555
+        },
+        {"_id": "65e2ed05c1320687f91e00a4",
+        "price": 600
+        }
+      ]
+    },
+    {
+      "name": "Gabapentin",
+       "shops":[
+        {"_id": "65e2ed05c1320687f91e00a2",
+        "price": 200
+        },
+        {"_id": "65e2ed05c1320687f91e00a3",
+        "price": 250
+        },
+        {"_id": "65e2ed05c1320687f91e00a4",
+        "price": 234
+        }
+      ]
+    },
+    {
+      "name": "Allergy Relief",
+       "shops":[
+        {"_id": "65e2ed05c1320687f91e00a2",
+        "price": 235
+        },
+        {"_id": "65e2ed05c1320687f91e00a3",
+        "price": 190
+        },
+        {"_id": "65e2ed05c1320687f91e00a4",
+        "price": 200
+        }
+      ]
+    },
+    {
+      "name": "Dove",
+       "shops":[
+        {"_id": "65e2ed05c1320687f91e00a5",
+        "price": 234
+        },
+        {"_id": "65e2ed05c1320687f91e00a6",
+        "price": 200
+        },
+        {"_id": "65e2ed05c1320687f91e00a7",
+        "price": 240
+        }
+      ]
+    },
+    {
+      "name": "Degree",
+       "shops":[
+        {"_id": "65e2ed05c1320687f91e00a5",
+        "price": 180
+        },
+        {"_id": "65e2ed05c1320687f91e00a6",
+        "price": 185
+        },
+        {"_id": "65e2ed05c1320687f91e00a7",
+        "price": 240
+        }
+      ]
+    },
+    {
+      "name": "Amoxicillin",
+       "shops":[
+        {"_id": "65e2ed05c1320687f91e00a5",
+        "price": 150
+        },
+        {"_id": "65e2ed05c1320687f91e00a6",
+        "price": 155
+        },
+        {"_id": "65e2ed05c1320687f91e00a7",
+        "price": 167
+        }
+      ]
+    },
+    {
+      "name": "Pregabalin",
+       "shops":[
+        {"_id": "65e2ed05c1320687f91e00a5",
+        "price": 134
+        },
+        {"_id": "65e2ed05c1320687f91e00a6",
+        "price": 170
+        },
+        {"_id": "65e2ed05c1320687f91e00a7",
+        "price": 140
+        }
+      ]
+    },
+    {
+      "name": "Famotidine",
+       "shops":[
+        {"_id": "65e2ed05c1320687f91e00a5",
+        "price": 234
+        },
+        {"_id": "65e2ed05c1320687f91e00a6",
+        "price": 200
+        },
+        {"_id": "65e2ed05c1320687f91e00a7",
+        "price": 240
+        }
+      ]
+    },
+    {
+      "name": "Acetaminophen",
+       "shops":[
+        {"_id": "65e2ed05c1320687f91e00a8",
+        "price": 153
+        },
+        {"_id": "65e2ed05c1320687f91e00a9",
+        "price": 150
+        },
+        {"_id": "65e2ed05c1320687f91e00aa",
+        "price": 200
+        }
+      ]
+    },
+    {
+      "name": "Prednisone",
+       "shops":[
+        {"_id": "65e2ed05c1320687f91e00a8",
+        "price": 153
+        },
+        {"_id": "65e2ed05c1320687f91e00a9",
+        "price": 150
+        },
+        {"_id": "65e2ed05c1320687f91e00aa",
+        "price": 200
+        }
+      ]
+    },
+    {
+      "name": "Omeprazole",
+       "shops":[
+        {"_id": "65e2ed05c1320687f91e00a8",
+        "price": 134
+        },
+        {"_id": "65e2ed05c1320687f91e00a9",
+        "price": 150
+        },
+        {"_id": "65e2ed05c1320687f91e00aa",
+        "price": 135
+        }
+      ]
+    },
+    {
+      "name": "Diclofenac Sodium",
+       "shops":[
+        {"_id": "65e2ed05c1320687f91e00a8",
+        "price": 156
+        },
+        {"_id": "65e2ed05c1320687f91e00a9",
+        "price": 159
+        },
+        {"_id": "65e2ed05c1320687f91e00aa",
+        "price": 201
+        }
+      ]
+    },
+    {
+      "name": "Methocarbamol",
+       "shops":[
+        {"_id": "65e2ed05c1320687f91e00a8",
+        "price": 200
+        },
+        {"_id": "65e2ed05c1320687f91e00a9",
+        "price": 267
+        },
+        {"_id": "65e2ed05c1320687f91e00aa",
+        "price": 211
+        }
+      ]
+    },
+    {
+      "name": "Salicylic Acid",
+       "shops":[
+        {"_id": "65e2ed05c1320687f91e00a8",
+        "price": 132
+        },
+        {"_id": "65e2ed05c1320687f91e00ab",
+        "price": 150
+        }
+      ]
+    },
+    {
+      "name": "Metformin Hydrochloride",
+      "shops":[
+        {"_id": "65e2ed05c1320687f91e00a9",
+        "price": 132
+        },
+        {"_id": "65e2ed05c1320687f91e00ab",
+        "price": 150
+        }
+      ]
+    },
+    {
+      "name": "Amoxicillin and Clavulanate Potassium",
+      "shops":[
+        {"_id": "65e2ed05c1320687f91e00aa",
+        "price": 150
+        },
+        {"_id": "65e2ed05c1320687f91e00ab",
+        "price": 134
+        }
+      ]
+    },
+    {
+      "name": "Naproxen",
+      "shops":[
+        {"_id": "65e2ed05c1320687f91e00a7",
+        "price": 209
+        },
+        {"_id": "65e2ed05c1320687f91e00ab",
+        "price": 250
+        }
+      ]
+    },
+    {
+      "name": "Hydrochlorothiazide",
+      "shops":[
+        {"_id": "65e2ed05c1320687f91e00a6",
+        "price": 150
+        },
+        {"_id": "65e2ed05c1320687f91e00ab",
+        "price": 167
+        }
+      ]
+    },
+    {
+      "name": "Hydrocodone Bitartrate and Acetaminophen",
+      "shops":[
+        {"_id": "65e2ed05c1320687f91e00a5",
+        "price": 120
+        },
+        {"_id": "65e2ed05c1320687f91e00ab",
+        "price": 122
+        }
+      ]
+    },
+    {
+      "name": "Acyclovir",
+      "shops":[
+        {"_id": "65e2ed05c1320687f91e00a4",
+        "price": 120
+        },
+        {"_id": "65e2ed05c1320687f91e00ab",
+        "price": 119
+        }
+      ]
+    },
+    {
+      "name": "Lidocaine",
+      "shops":[
+        {"_id": "65e2ed05c1320687f91e00a3",
+        "price": 120
+        },
+        {"_id": "65e2ed05c1320687f91e00ab",
+        "price": 119
+        }
+      ]
+    },
+    {
+      "name": "Potassium Chloride",
+      "shops":[
+        {"_id": "65e2ed05c1320687f91e00a2",
+        "price": 134
+        },
+        {"_id": "65e2ed05c1320687f91e00ab",
+        "price": 150
+        }
+      ]
+    }
+]
+
