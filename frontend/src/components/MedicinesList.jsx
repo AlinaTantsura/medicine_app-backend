@@ -3,6 +3,7 @@ import { getMedicinesByShopId } from "../api";
 import { useParams } from "react-router-dom";
 import { ListContext } from "./Context";
 import { nanoid } from 'nanoid'
+import { MedicinesListStyled } from "./MedicinesList.styled";
 
 
 export const MedicinesList = () => {
@@ -26,8 +27,10 @@ export const MedicinesList = () => {
 
     return (
         
-        (medicines && shopId) && (<ul>
-            {medicines.map(({_id, name, price, store} )=> <li key={_id}><div>
+        (medicines && shopId) && (<MedicinesListStyled>
+            {medicines.map(({ _id, name, price, store }) => <li key={_id}>
+                <img src="https://www.norma.uz/img/3a/7c/5129deecc99ae12ad7bc30bcad7b.jpg" alt="Medicines" width={250} />
+                <div>
                 <h4>{name}</h4>
                 <p>Price: {price}</p>
                 {(medicinesList && medicinesList.find(item => item.name === name && item.store === store))
@@ -35,7 +38,7 @@ export const MedicinesList = () => {
                     : (<button type="button" onClick={() => {
                     addMedicineToTheList({ "id": _id, "name": name, "price": price, "store": store, "amount": 1 });
                 }}>Add to the shopping list</button>)}
-               
-            </div></li>)}
-        </ul>))
+                </div>
+            </li>)}
+        </MedicinesListStyled>))
 }
