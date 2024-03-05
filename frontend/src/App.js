@@ -1,22 +1,19 @@
-import React, { useState, useEffect } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import { Home } from './pages/Home';
+import { ShoppingCard } from './pages/ShoppingCard';
+import { Layout } from './components/Layout';
 
-function App() {
-  const [data, setData] = useState(null);
-  useEffect(() => {
-    fetch('/api/drugshops').then(resp => resp.json()).then(resp => setData(resp)).catch(err => console.log(err))
-  }, [])
-  
-
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-          {(!data) ? <p>Loading</p> : <p>{data[0]._id}</p>}
-      </header>
+    <div>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path=":shopId" element={<Home />} />
+          <Route path="shopcard" element={<ShoppingCard />} />
+        </Route>
+      </Routes>
     </div>
-  );
+  )
 }
-
-export default App;

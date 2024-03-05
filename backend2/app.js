@@ -3,6 +3,7 @@ import cors from "cors";
 import mongoose from "mongoose";
 import "dotenv/config.js";
 import { medicineRouter } from "./routes/medicineRouter.js";
+import { orderRouter } from "./routes/orderRouter.js";
 
 const app = express();
 const { DB_HOST, PORT } = process.env;
@@ -11,6 +12,7 @@ app.use(cors())
 app.use(express.json());
 
 app.use("/api/drugshops", medicineRouter);
+app.use("/api/orders", orderRouter);
 app.use('_', (_, res) => {
     res.status(404).json({
         message: "Route not found"

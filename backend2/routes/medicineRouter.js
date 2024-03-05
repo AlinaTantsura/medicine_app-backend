@@ -1,9 +1,10 @@
 import express from "express";
 import { Medicine } from "../models/medicineModel.js";
+import { isValidObjectId } from "mongoose";
 
 export const medicineRouter = express.Router();
 
-medicineRouter.get('/', async (req, res, next) => {
+medicineRouter.get('/', async (_, res, next) => {
     try {
         const shopsList = await Medicine.find({}, "shop_name");
         res.status(200).json(shopsList);
@@ -14,8 +15,16 @@ medicineRouter.get('/', async (req, res, next) => {
 });
 
 medicineRouter.get('/:shopId', async (req, res, next) => {
-    const {shopId }= req.params;
-    console.log(shopId)
+    const { shopId } = req.params;
+    if (!isValidObjectId(shopId)) {
+        const error = new Error();
+        error.status = 400;
+        error.message = "It's not a valid id";
+        res.status(400).json({
+            message: error.message
+        })
+        next(error) ;
+    }
     try {
         const drugStore = await Medicine.findById(shopId);
         res.status(200).json(drugStore);
@@ -23,9 +32,3 @@ medicineRouter.get('/:shopId', async (req, res, next) => {
         next(error); 
     }
 })
-
-// medicineRouter.post('/', async(req, res) => {
-//     // const medicines = await Medicine.find();
-//     const newMed = await Medicine.create({"name": "Diklofenak"})
-//     // res.json(medicines)
-// })
