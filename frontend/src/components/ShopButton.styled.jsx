@@ -14,10 +14,5 @@ export const ShopButton = styled.button({
     "&:hover": {
         color: "white",
         fontSize: "18px",
-    },
-    "&:active": {
-        color: "white",
-        fontSize: "18px",
     }
-
 })
