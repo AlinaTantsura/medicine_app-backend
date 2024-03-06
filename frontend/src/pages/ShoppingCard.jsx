@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { ShoppingList } from "../components/ShoppingList"
 import { ListContext } from "../components/Context";
 import { postNewOrder } from "../api";
+import { FormInfoDiv, MainDiv, OrderForm } from "../components/OrderForm.styles";
 
 export const ShoppingCard = () => {
     const { medicinesList, totalPrice, clearLocalStorage } = useContext(ListContext);
@@ -31,7 +32,9 @@ export const ShoppingCard = () => {
 
     return (
         <>
-        <form onSubmit={handleSubmit}>
+        <OrderForm onSubmit={handleSubmit}>
+                <MainDiv>
+                <FormInfoDiv>
             <label htmlFor="name">Name</label>
             <input name="name" type="text" required/>
             <label htmlFor="email">Email</label>
@@ -39,10 +42,12 @@ export const ShoppingCard = () => {
             <label htmlFor="phone">Phone</label>
             <input name="phone" type="tel" required/>
             <label htmlFor="address">Address</label>
-            <input name="address" type="text" required/>
-            <ShoppingList />
+            <input name="address" type="text" required />
+                </FormInfoDiv>
+                    <ShoppingList />
+                </MainDiv>
             <button type="submit">Order</button>
-        </form>
+        </OrderForm>
                 
         </>
     )

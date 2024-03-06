@@ -1,28 +1,24 @@
 import styled from "styled-components";
 
-export const MedicinesListStyled = styled.ul({
-    padding: "10px",
-    margin: 0,
+export const OrderForm = styled.form({
+    border: "solid 1px red",
     display: "flex",
-    flexWrap: "wrap",
-    gap: "15px",
-    justifyContent: "center",
-    li: {
-        padding: 0,
-        width: "calc(100 - 10px) / 3",
-        maxWidth: "250px",
-        border: 'solid 1px lightgrey',
+    flexDirection: "column",
+    gap: "10px",
+    maxWidth: "1200px",
+    padding: "15px",
+    position: "relative",
+    input: {
+        width: "200px",
+        border: "solid 1px lightgrey",
         borderRadius: "5px",
-        overflow: "hidden",
-        paddingBottom: "10px",
-        div: {
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            // justifyContent: "center",
-            margin: 0,
-            padding: "10px",
-            button: {
+        outline: "none",
+        
+    },
+    "input:focus": {
+            border: "solid 2px grey",
+    },
+    button: {
                 backgroundImage: "linear-gradient(to left, #553c9a, #b393d3)",
                 border: "none",
                 borderRadius: "10px",
@@ -33,23 +29,25 @@ export const MedicinesListStyled = styled.ul({
                 width: "100px",
                 height: "30px",
                 fontSize: "10px",
-                transform: "",
+            transform: "",
+            position: "absolute",
+            right: "10px",
+                bottom: "15px",
                 "&:hover": {
                     color: "white",
                     fontSize: "12px",
                     scale: "1.1",
                 }
             }
-        }
-    }
-
-
 })
-
-export const InfoDiv = styled.div({
+export const FormInfoDiv = styled.div({
     display: "flex",
     flexDirection: "column",
-    alignItems: "center",
     gap: "10px",
-    margin: 0,
+});
+
+export const MainDiv = styled.div({
+    display: "flex",
+    flexDirection: "row",
+    gap: "10px",
 })

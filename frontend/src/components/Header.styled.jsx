@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styled from "styled-components"
 
 export const HeaderStyled = styled.header({
@@ -8,15 +9,18 @@ export const HeaderStyled = styled.header({
     nav: {
         display: "flex",
         gap: "10px",
-        a: {
-            color: "black",
-            fontWeight: 500,
-            textDecoration: "none"
-        },
-       "a:hover": {
-           color: "white",
-           textDecoration: "underline"
-        },
-
     }
-})
+});
+
+export const NavLinkStyled = styled(NavLink)`
+color: black;
+font-weight: 500;
+text-decoration: none;
+&:hover {
+    color: white;
+    text-decoration: underline;
+};
+&.active {
+    color: white;
+    text-decoration: underline;
+}`

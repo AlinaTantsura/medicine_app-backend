@@ -1,33 +1,35 @@
 import { useContext} from "react"
 import { ListContext } from "./Context"
+import { ShoppingListStyled } from "./ShoppingListStyled.styled";
+import { MedicinesShopListStyled } from "./MedicinesShopList. styled";
 
 export const ShoppingList = () => {
     const { medicinesList,totalPrice, removeMedicineFromTheList, changeMedicineAmount} = useContext(ListContext);
     
     const handleChange = (e) => {
-        console.log(e.target.id);
        changeMedicineAmount(e.target.id, Number(e.target.value))
     }
     return (
         medicinesList && (
-            <>
-            <ul>
+            <ShoppingListStyled>
+            <MedicinesShopListStyled>
                 {medicinesList.map(({id, name, price, store, amount })=> 
                     <li key={id}>
+                            <img src="https://www.norma.uz/img/3a/7c/5129deecc99ae12ad7bc30bcad7b.jpg" alt="Medicines" width={250} />
                         <div>
                             <h4>{name}</h4>
                             <p>Drugstore name: "{store}"</p>
-                            <p>Price: {price}</p>
+                            <p>Price by one: {price}</p>
                             <input id={id} type="number" step="1" min="1" defaultValue={amount} onChange={handleChange} />
                             <button type="button" onClick={() => {
                                 removeMedicineFromTheList(id)
-                            }}>Remove</button>
+                            }}>Remove from the shopping list</button>
                         </div>
                     </li>
                 )}
-                </ul>
-                <p>Total price: {totalPrice}</p>
-            </>
+                </MedicinesShopListStyled>
+                <p><b>Total price:</b> {totalPrice}</p>
+            </ShoppingListStyled>
         )
     )
 }

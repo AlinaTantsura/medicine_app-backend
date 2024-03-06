@@ -3,7 +3,7 @@ import { getMedicinesByShopId } from "../api";
 import { useParams } from "react-router-dom";
 import { ListContext } from "./Context";
 import { nanoid } from 'nanoid'
-import { InfoDiv, MedicinesListStyled } from "./MedicinesList.styled";
+import { InfoDiv, MedicinesListStyled} from "./MedicinesList.styled";
 
 
 export const MedicinesList = () => {

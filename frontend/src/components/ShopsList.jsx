@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { getShopsList } from "../api";
 import { useNavigate } from "react-router-dom";
 import { ListContext } from "./Context";
-import { ShopListStyled } from "./ShopList.styled";
+import { ShopListStyled } from "./ShopsList.styled";
 import { ShopButton } from "./ShopButton.styled";
 
 export const ShopsList = () => {
