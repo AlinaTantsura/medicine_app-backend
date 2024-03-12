@@ -3,14 +3,14 @@
     "routes": [
         {
         "src": "/api/drugshops",
-        "dest": "/"
+        "dest": "/backend2"
         },
         {
         "src": "/api/drugshops/:shopId",
-        "dest": "/"
+        "dest": "/backend2"
         },
         {
         "src": "/api/orders",
-        "dest": "/"
+        "dest": "/backend2"
         }]
 }
