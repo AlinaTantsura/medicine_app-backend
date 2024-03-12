@@ -14,10 +14,11 @@ export const ShopButton = styled.button({
     "&:hover": {
         color: "white",
         fontSize: "18px",
+    },
+    '&.activeShop': {
+        color: "white",
+        fontSize: "18px",
+        boxShadow: " rgba(0, 0, 0, 0.24) 0px 3px 8px;",
+        border: "solid 2px white"
     }
 });
-
-export const ShopButtonActive = styled.button`
-active: {
-    color: white
-}`

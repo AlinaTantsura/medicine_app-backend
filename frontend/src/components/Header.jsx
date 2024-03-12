@@ -7,8 +7,8 @@ export const Header = () => {
     const path = `/${firstShopId}`
     return(<HeaderStyled>
             <nav>
-            {/* {firstShopId ? (<NavLinkStyled to={path}>Shop</NavLinkStyled>) : (<NavLinkStyled to="/">Shop</NavLinkStyled>)} */}
-            <NavLinkStyled to={firstShopId ? path : "/"}>Shop</NavLinkStyled>
+            {firstShopId ? (<NavLinkStyled to={path}>Shop</NavLinkStyled>) : (<NavLinkStyled to="/">Shop</NavLinkStyled>)}
+            {/* <NavLinkStyled to={firstShopId ? path : "/"}>Shop</NavLinkStyled> */}
             <NavLinkStyled to="/shopcard">Shopping card</NavLinkStyled>
             </nav>
         </HeaderStyled>)

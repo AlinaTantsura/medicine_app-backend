@@ -9,6 +9,7 @@ export const ShopsList = () => {
     const [data, setData] = useState(null);
     const {firstShopId, findFirstId} = useContext(ListContext)
     const navigate = useNavigate();
+    const button = document.querySelector(".activeShop");
 
     useEffect(() => {
         const getShops = async () => {
@@ -30,13 +31,17 @@ export const ShopsList = () => {
         findFirstId('');
        
     }, [data, firstShopId, navigate, findFirstId]);
+   
     return (
+        
         data && (
              <ShopListStyled>
-                {data.map(item => (<li key={item._id}>
+                {   console.log(button)}
+                {    data.map(item => (<li key={item._id}>
                     <ShopButton type="button" onClick={(e) => {
                         navigate(`/${item._id}`);
-        
+                        if(button) button.classList.remove('activeShop');
+                        e.currentTarget.classList.add('activeShop')
                     }}>{item.shop_name}</ShopButton></li>))}
             </ShopListStyled>
         )
