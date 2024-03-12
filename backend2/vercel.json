@@ -1,16 +1,9 @@
 {
-    "rewrites": [{"source": "/(.*)", "destination": "/"}],
+   
+    "build": [{"src": "./app.js"}],
     "routes": [
         {
-        "src": "/api/drugshops",
-        "dest": "/backend2"
-        },
-        {
-        "src": "/api/drugshops/:shopId",
-        "dest": "/backend2"
-        },
-        {
-        "src": "/api/orders",
+        "src": "/(.*)",
         "dest": "/backend2"
         }]
 }
