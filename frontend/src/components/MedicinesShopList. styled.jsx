@@ -24,27 +24,6 @@ export const MedicinesShopListStyled = styled.ul({
         },
         input: {
             maxWidth: "50px"
-        },
-        // button: {
-        //         backgroundImage: "linear-gradient(to left, #553c9a, #b393d3)",
-        //         border: "none",
-        //         borderRadius: "10px",
-        //         color: "black",
-        //         display: "flex",
-        //         alignItems: "center",
-        //         justifyContent: "center",
-        //         width: "100px",
-        //         height: "30px",
-        //         fontSize: "10px",
-        //     transform: "",
-        //     position: "absolute",
-        //     right: "10px",
-        //         bottom: 0,
-        //         "&:hover": {
-        //             color: "white",
-        //             fontSize: "12px",
-        //             scale: "1.1",
-        //         }
-        //     }
+        }
     }
 })

@@ -15,4 +15,9 @@ export const ShopButton = styled.button({
         color: "white",
         fontSize: "18px",
     }
-})
+});
+
+export const ShopButtonActive = styled.button`
+active: {
+    color: white
+}`

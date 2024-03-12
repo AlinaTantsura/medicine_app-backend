@@ -36,8 +36,7 @@ export const ShopsList = () => {
                 {data.map(item => (<li key={item._id}>
                     <ShopButton type="button" onClick={(e) => {
                         navigate(`/${item._id}`);
-                        e.currentTarget.classList.add("active")
-                        console.log(e.currentTarget)
+        
                     }}>{item.shop_name}</ShopButton></li>))}
             </ShopListStyled>
         )
