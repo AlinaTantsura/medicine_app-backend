@@ -1,3 +1,16 @@
 {
-    "rewrites": [{"source": "/(.*)", "destination": "/"}]
+    "rewrites": [{"source": "/(.*)", "destination": "/"}],
+    "routes": [
+        {
+        "src": "/api/drugshops",
+        "dest": "/"
+        },
+        {
+        "src": "/api/drugshops/:shopId",
+        "dest": "/"
+        },
+        {
+        "src": "/api/orders",
+        "dest": "/"
+        }]
 }
