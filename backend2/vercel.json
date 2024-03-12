@@ -1,6 +1,6 @@
 {
    
-    "build": [{"src": "./app.js"}],
+    "builds": [{"src": "./app.js"}],
     "routes": [
         {
         "src": "/(.*)",
