@@ -11,6 +11,9 @@ const { DB_HOST, PORT } = process.env;
 app.use(cors())
 app.use(express.json());
 
+app.use("/api/test", (req, res) => {
+    res.json({"message": "This is the test"})
+})
 app.use("/api/drugshops", medicineRouter);
 app.use("/api/orders", orderRouter);
 app.use('_', (_, res) => {
