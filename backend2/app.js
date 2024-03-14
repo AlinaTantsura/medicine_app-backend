@@ -49,7 +49,7 @@ const {PORT } = process.env;
 app.use(cors())
 app.use(express.json());
 
-app.get("/api/test", (req, res) => {
+app.use("/api/test", (req, res) => {
     res.json({"message": "This is the test"})
 })
 
